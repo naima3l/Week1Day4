@@ -46,7 +46,7 @@ namespace Week1Day4.esercizio1
         {
             Console.WriteLine("Quanti dadi vuoi tirare?");
             int n;
-            while (!int.TryParse(Console.ReadLine(), out n))
+            while (!int.TryParse(Console.ReadLine(), out n) || n <=0)
             {
                 Console.WriteLine("Scelta non valida. Devi inserire un numero itero. Riprova!");
             }
